@@ -1,4 +1,4 @@
-# Desarrollo de arquitectura Orioentada a Eventos
+# Desarrollo de arquitectura Orientada a Eventos
 ## SpringBoot 3 y Kafka
 
 ![Alt text](1711386064706.gif)
