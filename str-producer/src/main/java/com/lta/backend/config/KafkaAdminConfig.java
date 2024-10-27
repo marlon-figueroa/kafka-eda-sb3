@@ -1,4 +1,5 @@
 package com.lta.backend.config;
+
 import org.apache.kafka.clients.admin.AdminClientConfig;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.kafka.KafkaProperties;
@@ -16,16 +17,14 @@ public class KafkaAdminConfig {
     private KafkaProperties kafkaProperties;
 
     @Bean
-    public KafkaAdmin kafkaAdmin(){
-        var configs = new HashMap<String,Object>();
-        configs.put(AdminClientConfig.BOOTSTRAP_SERVERS_CONFIG,kafkaProperties.getBootstrapServers());
+    public KafkaAdmin kafkaAdmin() {
+        var configs = new HashMap<String, Object>();
+        configs.put(AdminClientConfig.BOOTSTRAP_SERVERS_CONFIG, kafkaProperties.getBootstrapServers());
         return new KafkaAdmin(configs);
     }
 
     @Bean
-    public KafkaAdmin.NewTopics topics(){
-        return new KafkaAdmin.NewTopics(
-                TopicBuilder.name("str-topic").partitions(2).replicas(1).build()
-        );
+    public KafkaAdmin.NewTopics topics() {
+        return new KafkaAdmin.NewTopics(TopicBuilder.name("str-topic").partitions(2).replicas(1).build());
     }
 }

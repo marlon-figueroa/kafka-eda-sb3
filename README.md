@@ -13,4 +13,4 @@
     1. `docker push marlon1993fig/str-producer:1.0.1`
     2. `docker push marlon1993fig/str-producer:1.0.1`
 
-***Nota:*** Para cada ajuste en los proyectos java se debe recrear la imagen del contenedor
+**Nota:** Para cada ajuste en los proyectos java se debe recrear la imagen del contenedor
