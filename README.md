@@ -14,3 +14,15 @@
     2. `docker push marlon1993fig/str-producer:1.0.1`
 
 **Nota:** Para cada ajuste en los proyectos java se debe recrear la imagen del contenedor
+
+## Iniciar contenedor y pruebas
+
+![Alt text](1.png)
+
+![Alt text](2.png)
+
+![Alt text](3.png)
+
+![Alt text](4.png)
+
+![Alt text](5.png)
